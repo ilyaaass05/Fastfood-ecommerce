@@ -1,0 +1,518 @@
+* {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* nav Start */
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #004F52A6;
+}
+
+.naav {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.naav ul {
+    display: flex;
+    gap: 64px;
+    list-style: none;
+    margin: 0%;
+    padding: 0px;
+}
+
+.naav ul li {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.naav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.naav ul li a:hover {
+    border-bottom: solid 2px white;
+}
+
+
+.naav .dwl .btn {
+    background-color: #AC9A3D;
+    color: white;
+    width: 223px;
+    height: 44px;
+    transition: 0.8s ease;
+}
+
+.naav .dwl .btn:hover {
+    background-color: #8b7c30;
+    transform: scale(1.05);
+}
+
+nav img {
+    Width: 82px;
+    Height: 48px;
+}
+
+/* nav End */
+
+/* main1 Start */
+.naav-maain {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./imgs/bg-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* display: none; */
+}
+
+.main1 {
+    height: calc(100vh - 100px);
+    background-color: #004F52A6;
+}
+
+.main1 .bgg-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main1 .bgg-color .home {
+    width: 777px;
+    height: 310px;
+
+}
+
+.main1 .home .teext h1 {
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.main1 .home .teext p {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.main1 .home .btnss button {
+    width: 278px;
+    transition: 0.5s ease;
+}
+
+.main1 .home .btnss button:hover {
+    transform: scale(1.05);
+}
+
+.main1 .home .btnss .btn-outline-light:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+/* main1 End */
+
+
+/* main2 Start */
+.main2 {
+    height: 100vh;
+}
+
+.main2 .meals {
+    display: flex;
+}
+
+.main2 .meals .bgg {
+    overflow: hidden;
+    width: 33.5%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main2 .meals .meal1 {
+    background-image: url(./imgs/meal-1.jpeg);
+}
+
+.main2 .meals .meal2 {
+    background-image: url(./imgs/meal-2.png);
+}
+
+.main2 .meals .meal3 {
+    background-image: url(./imgs/meal-3.png);
+}
+
+.main2 .meals .meal1::before,
+.main2 .meals .meal2::before,
+.main2 .meals .meal3::before {
+    content: attr(data-h1);
+    position: absolute;
+    top: 4em;
+    background-image: linear-gradient(#ffffff00, #004f52b4);
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    padding: 30px;
+    transition: 0.4s;
+    transform: translateY(100%);
+}
+
+.main2 .meals .meal1::after,
+.main2 .meals .meal2::after,
+.main2 .meals .meal3::after {
+    content: attr(data-pa);
+    position: absolute;
+    top: 10em;
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+    padding: 30px;
+    transition: 0.4s;
+    transform: translateY(100%);
+}
+
+
+.main2 .meals .meal1:hover::before,
+.main2 .meals .meal2:hover::before,
+.main2 .meals .meal3:hover::before {
+    transform: translateY(0);
+}
+
+.main2 .meals .meal1:hover::after,
+.main2 .meals .meal2:hover::after,
+.main2 .meals .meal3:hover::after {
+    transform: translateY(0);
+}
+
+/* main2 End */
+
+
+/* main3 Start */
+
+.titels h2 {
+    color: #AC9A3D;
+    font-weight: 800;
+    font-size: 28px;
+    padding: 1.5rem 0px;
+}
+
+.titels h1 {
+    color: #014F52;
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 3rem;
+}
+
+.titels h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 530px;
+    height: 3px;
+    background: #014F52;
+    transform: translateX(-5%);
+}
+
+
+.menu {
+    height: 515px;
+    padding: 0px 10px 20px 10px;
+    margin: 10px 10px 40px 10px;
+    transition: 0.7s ease;
+}
+
+.menu .img {
+    display: flex;
+    justify-content: center;
+}
+
+.menus img {
+    width: 320px;
+    height: 320px;
+    transition: 0.7s ease;
+}
+
+.info h4 {
+    color: #014f5200;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.7s ease;
+}
+
+.info p {
+    color: #00000000;
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: 0.7s ease;
+}
+
+
+.menu:hover {
+    border-radius: 20px;
+    box-shadow: 0 4px 12px 5px rgba(74, 73, 73, 0.2), 0 6px 20px 0 rgba(74, 74, 74, 0.19);
+}
+
+.menu:hover img {
+    transform: scale(0.9);
+}
+
+.menu:hover h4 {
+    color: #014F52;
+}
+
+.menu:hover p {
+    color: #000;
+}
+
+
+/* main3 End */
+
+
+/* Responsive Start */
+@media (min-width: 741px) and (max-width: 992px) {
+    .naav {
+        justify-content: space-around;
+    }
+
+    .naav ul {
+        gap: 1.5rem;
+    }
+
+    .naav .dwl .btn {
+        width: 164px;
+        height: 44px;
+        padding: 1px 6px;
+    }
+
+    .naav ul li {
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    .main1 .bgg-color .home {
+        width: 777px;
+        height: 430px;
+        margin-bottom: 1rem;
+
+    }
+
+    .main1 .home .teext h1 {
+        margin-bottom: 5rem;
+    }
+
+    .main1 .home .teext p {
+        margin-bottom: 5rem;
+    }
+
+    .main1 .home .btnss button {
+        width: 278px;
+        margin: 10px 30px;
+    }
+
+
+    .main2 .meals .meal1::before,
+    .main2 .meals .meal2::before,
+    .main2 .meals .meal3::before {
+        top: 0px;
+        padding: 300px 20px;
+        font-size: 35px;
+    }
+
+    .main2 .meals .meal1::after,
+    .main2 .meals .meal2::after,
+    .main2 .meals .meal3::after {
+        top: 0px;
+        padding: 500px 20px;
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 450px) and (max-width: 741px) {
+    nav {
+        height: 80px;
+    }
+
+    .naav {
+        justify-content: space-around;
+    }
+
+    .naav ul {
+        gap: 25px;
+    }
+
+    .naav form {
+        display: none;
+    }
+
+    .naav ul li {
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    nav img {
+        Width: 80px;
+        Height: 50px;
+    }
+
+    .main1 {
+        height: calc(100vh - 80px);
+    }
+
+    .main1 .home .teext h1 {
+        font-weight: bold;
+        margin-bottom: 3rem;
+        font-size: 40px;
+    }
+
+    .main1 .home .teext p {
+        font-weight: normal;
+        margin-bottom: 3rem;
+        padding: 0px 3rem;
+        font-size: 25px;
+    }
+
+    .main1 .home .btnss button {
+        width: 250px;
+        margin: 10px 10px;
+    }
+
+
+    .main2 .meals {
+        display: block;
+    }
+
+    .main2 .meals .bgg {
+        width: 100%;
+        height: 33.5%;
+    }
+
+    .main2 .meals .meal1::before,
+    .main2 .meals .meal2::before,
+    .main2 .meals .meal3::before {
+        top: 0px;
+        padding: 20px 40px 0px 40px;
+        font-size: 35px;
+    }
+
+    .main2 .meals .meal1::after,
+    .main2 .meals .meal2::after,
+    .main2 .meals .meal3::after {
+        top: 150px;
+        padding: 0px 40px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    nav {
+        height: 60px;
+    }
+
+    .naav {
+        justify-content: space-around;
+    }
+
+    .naav ul {
+        gap: 20px;
+    }
+
+    .naav form {
+        display: none;
+    }
+
+    .naav ul li {
+        font-weight: bold;
+        font-size: 15px;
+
+    }
+
+    nav img {
+        Width: 60px;
+    }
+
+    .main1 {
+        height: calc(100vh - 60px);
+    }
+
+    .main1 .home .teext h1 {
+        font-weight: bold;
+        margin-bottom: 3rem;
+        letter-spacing: 0px;
+        font-size: 20px;
+    }
+
+    .main1 .home .teext p {
+        font-weight: normal;
+        margin-bottom: 3rem;
+        padding: 0px 3rem;
+        font-size: 16px;
+    }
+
+    .main1 .home .btnss button {
+        width: 300px;
+        margin: 15px 10px;
+    }
+
+
+    .main2 .meals {
+        display: block;
+        font-size: 1px;
+    }
+
+    .main2 .meals .bgg {
+        width: 100%;
+        height: 33.5%;
+    }
+
+    .main2 .meals .meal1::before,
+    .main2 .meals .meal2::before,
+    .main2 .meals .meal3::before {
+        top: 0px;
+        padding: 40px 25px;
+        font-size: 25px;
+    }
+
+    .main2 .meals .meal1::after,
+    .main2 .meals .meal2::after,
+    .main2 .meals .meal3::after {
+        top: 100px;
+        font-size: 15px;
+    }
+
+    .titels h2 {
+        font-weight: 700;
+    }
+
+    .titels h1 {
+        font-weight: 600;
+        font-size: 32px;
+    }
+    
+    .titels h1::before {
+        width: 325px;
+        height: 3px;
+    }
+}
+
+/* Responsive End */
